@@ -1,17 +1,88 @@
-# React + Vite
+📚 Quizify – Interactive React Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Quizify is a modern, responsive, and dynamic React-based quiz application that allows users to test their knowledge with multiple-choice questions.
+The app highlights correct and incorrect answers, calculates score, and lets users restart the quiz.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✔️ Fully responsive UI (Mobile + Desktop)
 
-## React Compiler
+✔️ Multiple-choice questions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✔️ Highlights correct & incorrect answers
 
-## Expanding the ESLint configuration
+✔️ Displays final score
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Quizify
+✔️ Reset quiz option
+
+✔️ Smooth navigation using React Router
+
+✔️ Clean UI built with Tailwind CSS
+
+🛠 Tech Stack
+
+React JS
+
+React Router DOM
+
+Tailwind CSS
+
+JavaScript (ES6+)
+
+
+📂 Project Structure
+Quizify/
+│
+├── src/
+│   ├── components/
+│   │   ├── Home.js
+│   │   ├── Quiz.js
+│   ├── Data.js
+│   ├── App.js
+│   ├── index.js
+│
+├── public/
+│   ├── index.html
+│
+├── package.json
+├── README.md
+
+⚙️ Installation & Setup
+
+Follow these steps to run the project locally:
+
+1️⃣ Clone the repository
+git clone https://github.com/your-username/quizify.git
+
+2️⃣ Navigate into the project folder
+cd quizify
+
+3️⃣ Install dependencies
+npm install
+
+4️⃣ Start the development server
+
+If you used Vite:
+
+npm run dev
+
+
+If you used Create-React-App:
+
+npm start
+
+🧠 How It Works
+
+Questions are stored in Data.js
+
+User selects an option → app checks correctness
+
+Correct answer → turns green
+
+Incorrect answer → selected option red, correct one green
+
+Score increases automatically
+
+After last question → result screen appears
+
+User can restart the quiz
